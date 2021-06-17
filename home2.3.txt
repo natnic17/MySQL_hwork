@@ -1,0 +1,173 @@
+Microsoft Windows [Version 6.1.7601]
+(c) Корпорация Майкрософт (Microsoft Corp.), 2009. Все права защищены.
+
+C:\Users\home>mysqldump example > example.sql
+
+C:\Users\home>dir
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: 28C2-8ED8
+
+ Содержимое папки C:\Users\home
+
+10.06.21  05:21 PM    <DIR>          .
+10.06.21  05:21 PM    <DIR>          ..
+26.06.20  09:00 PM    <DIR>          .android
+17.03.21  10:36 PM    <DIR>          .config
+31.05.21  10:32 PM    <DIR>          .eclipse
+06.09.20  09:34 PM                52 .gitconfig
+29.06.20  08:14 PM    <DIR>          .gradle
+23.11.18  02:42 PM               747 .octave_hist
+17.03.21  10:35 PM    <DIR>          .ssh
+30.11.20  08:41 PM    <DIR>          .venv
+17.12.20  09:52 PM             1 881 .viminfo
+29.04.21  09:08 PM    <DIR>          .VirtualBox
+04.09.20  07:35 PM    <DIR>          .vscode
+02.03.20  04:26 PM    <DIR>          Contacts
+31.05.21  10:20 PM    <DIR>          Desktop
+15.03.21  07:11 PM    <DIR>          Documents
+31.05.21  10:46 PM    <DIR>          Downloads
+10.06.21  05:21 PM             1 868 example.sql
+02.03.20  04:26 PM    <DIR>          Favorites
+30.06.20  07:10 PM    <DIR>          IdeaProjects
+04.09.20  07:37 PM                 0 Illegible_code.html
+21.08.20  06:43 PM    <DIR>          it
+28.06.20  05:46 PM    <DIR>          IT-academy
+28.06.20  05:11 PM                 0 javac
+02.03.20  04:26 PM    <DIR>          Links
+02.03.20  04:26 PM    <DIR>          Music
+02.03.20  04:26 PM    <DIR>          Pictures
+30.11.20  08:51 PM    <DIR>          sample
+02.03.20  04:26 PM    <DIR>          Saved Games
+02.03.20  04:26 PM    <DIR>          Searches
+10.11.20  07:19 PM    <DIR>          venv
+02.03.20  04:26 PM    <DIR>          Videos
+29.04.21  09:04 PM    <DIR>          VirtualBox VMs
+               6 файлов          4 548 байт
+              27 папок  81 484 722 176 байт свободно
+
+C:\Users\home>
+
+C:\Users\home>
+
+C:\Users\home>mysqldump example
+-- MySQL dump 10.13  Distrib 8.0.25, for Win64 (x86_64)
+--
+-- Host: localhost    Database: example
+-- ------------------------------------------------------
+-- Server version       8.0.25
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0
+*/;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `users` (
+  `id` int DEFAULT NULL,
+  `name` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-06-10 17:23:55
+
+mysql> CREATE DATABASE sample;
+Query OK, 1 row affected (0.12 sec)
+
+mysql> USE sample;
+Database changed
+mysql> SOURCE example.sql;
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.16 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SHOW TABLES;
++------------------+
+| Tables_in_sample |
++------------------+
+| users            |
++------------------+
+1 row in set (0.05 sec)
+
+mysql>
+
